@@ -14,6 +14,7 @@ response=input("Would you like to add commit and push (Y/N)? ")
 
 # check if the input is not equal to "y"
 if response != "Y":
+    print("You did not respond with Y")
     sys.exit()
 
 
