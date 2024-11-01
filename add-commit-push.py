@@ -23,13 +23,8 @@ executeCommand("git add -A")
 # Check if there are two arguments
 CommitMessage="Update files."
 if len(sys.argv) > 2:
-    # Print the first and second argument
-    print(f"The first argument is: {sys.argv[1]}")
-    print(f"The second argument is: {sys.argv[2]}")
+   CommitMessage=sys.argv[2]
     
-else:
-    print("No arguments were provided.")
-    
-gitCommit="git commit -m \"Update files.\""
+gitCommit="git commit -m \""+CommitMessage+"\""
 executeCommand(gitCommit)
 executeCommand("git push")
