@@ -25,6 +25,6 @@ CommitMessage="Update files."
 if len(sys.argv) > 2:
    CommitMessage=sys.argv[2]
     
-gitCommit="git commit -m \""+CommitMessage+"\""
+gitCommit="git commit -m \""+CommitMessage+"\"" 
 executeCommand(gitCommit)
 executeCommand("git push")
