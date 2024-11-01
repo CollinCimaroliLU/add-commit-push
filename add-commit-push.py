@@ -20,12 +20,16 @@ if response != "Y":
 
 executeCommand("git add -A")
 
-# Check if there is at least one argument
-if len(sys.argv) > 1:
-    first_arg = sys.argv[1]  # The first argument (after the script name)
-    print(f"The first argument is: {first_arg}")
+# Check if there are two arguments
+CommitMessage="Update files."
+if len(sys.argv) > 2:
+    # Print the first and second argument
+    print(f"The first argument is: {sys.argv[1]}")
+    print(f"The second argument is: {sys.argv[2]}")
+    
 else:
     print("No arguments were provided.")
     
-executeCommand("git commit -m \"Update files.\"")
+gitCommit="git commit -m \"Update files.\""
+executeCommand(gitCommit)
 executeCommand("git push")
