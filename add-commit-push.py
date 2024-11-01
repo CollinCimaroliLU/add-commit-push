@@ -11,7 +11,6 @@ print("")
 executeCommand("git status")
 
 response=input("Would you like to add commit and push (Y/N)? ")
-print(response)
 
 # check if the input is not equal to "y"
 if response != "Y":
