@@ -12,7 +12,10 @@ executeCommand("git status")
 
 response=input("Would you like to add commit and push (Y/N)? ")
 print(response)
-sys.exit()
+
+# check if the input is not equal to "y"
+if response != "Y":
+    sys.exit()
 
 
 executeCommand("git add -A")
