@@ -10,11 +10,11 @@ print("Add Commit Push")
 print("")
 executeCommand("git status")
 
-response=input("Would you like to add commit and push (Y/N)? ")
+response=input("Would you like to add commit and push (y/n)? ")
 
 # check if the input is not equal to "y"
-if response != "Y":
-    print("You did not respond with Y")
+if response != "y":
+    print("You did not respond with y")
     sys.exit()
 
 
